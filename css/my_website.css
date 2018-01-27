@@ -1,0 +1,12 @@
+body{
+  background-image: url("../img/pexels-photo.jpg");
+  background-attachment: fixed;
+  height: 100%;
+}
+#logomarca {
+  font-family: 'Comic Sans MS', cursive;
+  font-size: 3.5em;
+}
+/*.menus {
+  font-family: 'Oswald', sans-serif;
+}*/
