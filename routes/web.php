@@ -16,8 +16,12 @@ Route::get('/', function () {
 });
 
 Route::get('/contact', 'ContactController@show');
-Route::post('/contact',  'ContactController@mailToAdmin'); 
+Route::post('/contact',  'ContactController@mailToAdmin');
 
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+Route::get('/admin', 'AdminController@index');
+
+Route::get('/superadmin', 'SuperAdminController@index');
