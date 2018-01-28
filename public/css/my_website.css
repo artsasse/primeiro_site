@@ -1,0 +1,16 @@
+body{
+  background-image: url("../img/pexels-photo.jpg");
+  background-attachment: fixed;
+  height: 100%;
+  margin: 0em;
+}
+#logomarca {
+  font-family: Impact;
+  font-size: 3.5em;
+}
+.menus {
+  font-family: 'Oswald', sans-serif;
+}
+.sem{
+  margin: 0em;
+}

@@ -1,95 +1,21 @@
-<!doctype html>
-<html lang="{{ app()->getLocale() }}">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-
-        <title>Laravel</title>
-
-        <!-- Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
-
-        <!-- Styles -->
-        <style>
-            html, body {
-                background-color: #fff;
-                color: #636b6f;
-                font-family: 'Raleway', sans-serif;
-                font-weight: 100;
-                height: 100vh;
-                margin: 0;
-            }
-
-            .full-height {
-                height: 100vh;
-            }
-
-            .flex-center {
-                align-items: center;
-                display: flex;
-                justify-content: center;
-            }
-
-            .position-ref {
-                position: relative;
-            }
-
-            .top-right {
-                position: absolute;
-                right: 10px;
-                top: 18px;
-            }
-
-            .content {
-                text-align: center;
-            }
-
-            .title {
-                font-size: 84px;
-            }
-
-            .links > a {
-                color: #636b6f;
-                padding: 0 25px;
-                font-size: 12px;
-                font-weight: 600;
-                letter-spacing: .1rem;
-                text-decoration: none;
-                text-transform: uppercase;
-            }
-
-            .m-b-md {
-                margin-bottom: 30px;
-            }
-        </style>
-    </head>
-    <body>
-        <div class="flex-center position-ref full-height">
-            @if (Route::has('login'))
-                <div class="top-right links">
-                    @auth
-                        <a href="{{ url('/home') }}">Home</a>
-                    @else
-                        <a href="{{ route('login') }}">Login</a>
-                        <a href="{{ route('register') }}">Register</a>
-                    @endauth
-                </div>
-            @endif
-
-            <div class="content">
-                <div class="title m-b-md">
-                    Laravel
-                </div>
-
-                <div class="links">
-                    <a href="https://laravel.com/docs">Documentation</a>
-                    <a href="https://laracasts.com">Laracasts</a>
-                    <a href="https://laravel-news.com">News</a>
-                    <a href="https://forge.laravel.com">Forge</a>
-                    <a href="https://github.com/laravel/laravel">GitHub</a>
-                </div>
-            </div>
-        </div>
-    </body>
-</html>
+@extends('layouts.WAKE')
+@section('content')
+<main>
+  <div class="container">
+    <div class="row white">
+      <h1>Bem vindo!</h1>
+      <h2>A WAKE é a maior empresa do mundo no ramo de viagens e aventuras radicais</h2>
+      <img src="https://images.pexels.com/photos/6496/man-person-jumping-desert.jpg?w=940&h=650&auto=compress&cs=tinysrgb" alt="radical" width="70%">
+      <h4>Nossa historia</h4>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in turpis eget risus imperdiet elementum et ac urna. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam quis iaculis lectus. Nullam at congue dui, eget blandit nibh. Praesent enim nisl, dictum vitae convallis at, tincidunt nec ante. Proin sit amet augue et sapien porta dapibus finibus at sapien. Nunc neque mauris, ullamcorper sed euismod sit amet, varius in magna. Ut tristique odio sit amet sollicitudin pharetra. </p>
+      <h4>Nossa missão</h4>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in turpis eget risus imperdiet elementum et ac urna. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam quis iaculis lectus. Nullam at congue dui, eget blandit nibh. Praesent enim nisl, dictum vitae convallis at, tincidunt nec ante. Proin sit amet augue et sapien porta dapibus finibus at sapien. Nunc neque mauris, ullamcorper sed euismod sit amet, varius in magna. Ut tristique odio sit amet sollicitudin pharetra.</p>
+      <h4>A opinião dos nossos clientes</h4>
+      <h5>John Doe</h5>
+      <em>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in turpis eget risus imperdiet elementum"</em>
+      <h5>Phulanô Cilvá</h5>
+      <em>"Lorem ipsum dolor sit amet, consectetur adipiscing elit."</em>
+    </div>
+  </div>
+</main>
+@endsection
